@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react';
+import Table1 from './table1.js';
+import List from "./List.js"
 
 function App() {
+  const [continent, setContinent] = useState('')
+
+  const onSelectContinent = (e) =>{
+    setContinent(e)
+  }
+
+  useEffect(() => {
+    <List continent = {continent}/>
+  }, [continent]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Continents</h1>
+      <Table1 onSelectContinent = {onSelectContinent}/>
+      {continent.length ==2
+      ? <List continent = {continent}/>
+      : null
+      }
     </div>
   );
 }
