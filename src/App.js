@@ -17,7 +17,7 @@ function App() {
     <div>
       <h1>Continents</h1>
       <Table1 onSelectContinent = {onSelectContinent}/>
-      {continent.length ==2
+      {continent.length ===2
       ? <List continent = {continent}/>
       : null
       }

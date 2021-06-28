@@ -2,7 +2,7 @@ import React from "react";
 import { Query } from "react-apollo";
 import { gql } from "apollo-boost";
 
-let GET_ALL_COUNTRIES = gql`
+const GET_ALL_COUNTRIES = gql`
 	query Continent($continentcode: ID!)
 	{
 		continent (code: $continentcode){
