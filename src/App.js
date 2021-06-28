@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import Table1 from './table1.js';
-import List from "./List.js"
+import Table1 from './components/table1.js';
+import List from "./functions/List.js"
 
 function App() {
   const [continent, setContinent] = useState('')
