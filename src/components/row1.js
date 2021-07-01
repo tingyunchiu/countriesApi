@@ -1,20 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router'
 
-function Row1({item, onSelectContinent}) {
-return(
-	<tr>
+function Row1({item}) {
+  return(
+	  <tr>
   		<td style={{width: '33%', wordBreak: 'break-word'}}>{item.code}</td>
-        <td style={{width: '33%', wordBreak: 'break-word'}}>
-        	<button id = {item.code}
-        			type="button"
-        			style ={{border: 'none', backgroundColor: 'white', textDecoration: 'underline'}}
-        			onClick={(e) => onSelectContinent(e.target.id)}>
-         		{item.name}
-         	</button>
-        </td>
-        <td style = {{wordBreak: 'break-word'}}>{item.num}</td>
-  	</tr>
-
-)
+      <td style={{width: '33%', wordBreak: 'break-word'}}>
+        <Link to={'/' + item.code}>{item.name}</Link>	
+      </td>
+      <td style = {{wordBreak: 'break-word'}}>{item.num}</td>
+    </tr>
+  )
 }
-export default Row1;
+export default  withRouter(Row1);

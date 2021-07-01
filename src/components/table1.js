@@ -1,7 +1,7 @@
 import React from 'react';
 import Row1 from './row1.js';
 
-function Table1({onSelectContinent}) {
+function Table1() {
 	const items =[
 		{'code': 'AF', 'name':'Africa', 'num':58},
 		{'code': 'AN', 'name':'Antarctica',  'num':5},
@@ -17,7 +17,6 @@ function Table1({onSelectContinent}) {
 		rows.push(
 		  <Row1 item = {item}
 		  key={item.code}
-		  onSelectContinent = {onSelectContinent}
 		  />
 		)
 	})
