@@ -37,7 +37,9 @@ const List = ({continent}) => (
       			<td style={{wordBreak: 'break-word'}}>{item.native}</td>
       			<td style={{wordBreak: 'break-word'}}>{item.capital}</td>
       			<td style={{wordBreak: 'break-word'}}>{item.currency}</td>
-      			<td style={{wordBreak: 'break-word'}}>{item.languages.map(lan => <span>{lan.name + "\n"}</span>)}</td>
+      			<td style={{wordBreak: 'break-word'}}>{item.languages.map(lan => 
+      				<span>{lan.name + "\n"}</span>)}
+      			</td>
   			</tr>
       	));
 

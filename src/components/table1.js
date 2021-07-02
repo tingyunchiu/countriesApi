@@ -1,16 +1,10 @@
 import React from 'react';
 import Row1 from './row1.js';
+import {items} from './items.js'
+
 
 function Table1() {
-	const items =[
-		{'code': 'AF', 'name':'Africa', 'num':58},
-		{'code': 'AN', 'name':'Antarctica',  'num':5},
-		{'code': 'AS', 'name':'Asia',  'num':52},
-		{'code': 'EU', 'name':'Europe',  'num':53},
-		{'code': 'NA', 'name':'North America',  'num':41},
-		{'code': 'OC', 'name':'Oceania',  'num':27},
-		{'code': 'SA', 'name':'South America',  'num':14}
-	]
+
 	const rows = [];
 
 	items.forEach(item => {

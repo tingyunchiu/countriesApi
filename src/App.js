@@ -4,7 +4,7 @@ import List from "./functions/List.js";
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
-  
+
   return (
     <div>
       <h1>Continents</h1>
@@ -19,7 +19,7 @@ function App() {
           <Route exact path={'/OC'} render={() => <List continent = {'OC'}/>} />
           <Route exact path={'/SA'} render={() => <List continent = {'SA'}/>} />
         </Switch>
-      </div>      
+      </div>
     </div>
   );
 }
