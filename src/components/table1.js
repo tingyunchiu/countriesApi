@@ -5,15 +5,12 @@ import {items} from './items.js'
 
 function Table1() {
 
-	const rows = [];
-
-	items.forEach(item => {
-		rows.push(
-		  <Row1 item = {item}
+	const rows = items.map(item =>
+		<Row1 item = {item}
 		  key={item.code}
-		  />
-		)
-	})
+		/>
+	)
+
 	return(
 	<div style = {{width: '35%', overflowX: 'auto'}}>
 	    <table style = {{width: '100%', tableLayout: 'fixed'}}>

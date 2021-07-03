@@ -31,7 +31,7 @@ const List = ({continent}) => (
     	if (loading) return <p>Loading...</p>;
       	if (error) return <p>Error :(</p>;
 		const lists = data.continent.countries.map(item => (
-        	<tr>
+        	<tr key = {item.code}>
       			<td style={{wordBreak: 'break-word'}}>{item.code}</td>
       			<td style={{wordBreak: 'break-word'}}>{item.name}</td>
       			<td style={{wordBreak: 'break-word'}}>{item.native}</td>
