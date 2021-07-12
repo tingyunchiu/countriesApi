@@ -11,5 +11,5 @@ The Api used in this demo is the countries Api from https://countries.trevorblad
 ![](https://github.com/tingyunchiu/countriesApi/blob/main/countries.png?raw=true)
 
 # How to use
-use "git clone https://github.com/tingyunchiu/countriesApi.git"
-then run "npm start" in the local directory
+use "git clone https://github.com/tingyunchiu/countriesApi.git" <br />
+Then run "npm start" in the local directory
